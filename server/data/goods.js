@@ -1,10 +1,10 @@
 const goodsListData = {
-    c: 0,
-    m: '',
-    d: [
+    code: 0,
+    msg: '',
+    data: [
         {
             id: 'UDJEPGNSS1',
-            goodsName: '商品名称商品名称商品名称',
+            goodsName: 'Apple/苹果 iPhone 11',
             price: 423400,
             status: 2,
             activityType: 2,
@@ -34,7 +34,7 @@ const goodsListData = {
         },
         {
             id: 'UDJEPGNSS7',
-            goodsName: '商品名称商品名称商品名称',
+            goodsName: 'Apple/苹果 iPhone 11',
             price: 123422,
             status: 1,
             activityType: 3,
@@ -64,7 +64,7 @@ const goodsListData = {
         },
         {
             id: 'UDJEPGNSS6',
-            goodsName: '商品名称商品名称商品名称',
+            goodsName: 'Apple/苹果 iPhone 11',
             price: 123412,
             status: 1,
             activityType: 1,
@@ -94,7 +94,7 @@ const goodsListData = {
         },
         {
             id: 'UDJEPGNSS5',
-            goodsName: '商品名称商品名称商品名称',
+            goodsName: 'Apple/苹果 iPhone 11',
             price: 123475,
             status: 2,
             activityType: 1,
@@ -124,7 +124,7 @@ const goodsListData = {
         },
         {
             id: 'UDJEPGNSS4',
-            goodsName: '商品名称商品名称商品名称',
+            goodsName: 'Apple/苹果 iPhone 11',
             price: 123412,
             status: 1,
             activityType: 3,
@@ -154,7 +154,7 @@ const goodsListData = {
         },
         {
             id: 'UDJEPGNSS3',
-            goodsName: '商品名称商品名称商品名称',
+            goodsName: 'Apple/苹果 iPhone 11',
             price: 123463,
             status: 1,
             activityType: 3,
@@ -184,7 +184,7 @@ const goodsListData = {
         },
         {
             id: 'UDJEPGNSS2',
-            goodsName: '商品名称商品名称商品名称',
+            goodsName: 'Apple/苹果 iPhone 11',
             price: 252472,
             status: 2,
             activityType: 3,

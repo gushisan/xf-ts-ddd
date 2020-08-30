@@ -1,20 +1,20 @@
 const dayjs = require('dayjs');
 const lotteryDetail = {
-    c: 0,
-    m: '',
-    d: {
+    code: 0,
+    msg: '',
+    data: {
         id: '8274',
         name: 'lottery name',
         lotteryType: 3,
-        startDate: dayjs('2018-05-05').valueOf(),
-        endDate: dayjs('2018-09-05').valueOf(),
+        startDate: dayjs('2020-05-05').valueOf(),
+        endDate: dayjs('2020-09-05').valueOf(),
     }
 }
 
 const lotteryPrizeList = {
-    c: 0,
-    m: '',
-    d: [
+    code: 0,
+    msg: '',
+    data: [
         {
             id: "1341",
             prizeName: '奖品名字1',
@@ -55,9 +55,9 @@ const lotteryPrizeList = {
 }
 
 const playLotteryResult = {
-    c: 0,
-    m: '',
-    d: {
+    code: 0,
+    msg: '',
+    data: {
         recordId: '23212',
         prize: {
             id: "1391",
@@ -69,9 +69,9 @@ const playLotteryResult = {
 }
 
 const saveAddressResult = {
-    c: 0,
-    m: '提交成功',
-    d: {}
+    code: 0,
+    msg: '提交成功',
+    data: {}
 }
 
 module.exports = {

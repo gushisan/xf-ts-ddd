@@ -1,0 +1,78 @@
+{
+  /* eslint的配置 */
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
+  /* 开启保存时自动格式化 */
+  "editor.formatOnSave": true,
+  /* eslint的配置 */
+  "eslint.enable": true,
+  "eslint.run": "onSave",
+  "eslint.options": {
+    "extensions": [".js", ".vue"]
+  },
+  "eslint.validate": [
+    "javascript",
+    "javascriptreact",
+    "vue-html",
+    "vue",
+    "html"
+  ],
+  // 关闭 vscode 默认的检查工具
+  "html.validate.scripts": false,
+  "javascript.validate.enable": false,
+  "eslint.alwaysShowStatus": true,
+  "eslint.format.enable": true,
+  "scss.lint.duplicateProperties": "error",
+  "css.lint.duplicateProperties": "error",
+  "less.lint.zeroUnits": "error",
+  // 隐藏文件
+  "files.exclude": {
+    ".nuxt": true,
+    "node_modules": true,
+    ".editorconfig": true,
+    ".env": true,
+    // ".env.development": true,
+    ".env.production": true,
+    ".env.test": true,
+    // ".eslintignore": true,
+    // ".eslintrc.js": true,
+    // ".gitignore": true,
+    ".prettierrc": true,
+    ".stylelintignore": true,
+    "package-lock.json": true,
+    "postcss.config.js": true,
+    // "tsconfig.json": true,
+    // "commitlint.config.js": true,
+    "yarn.lock": true,
+    "LICENSE": true,
+    "**/.git": true,
+    "**/.svn": true,
+    "**/.hg": true,
+    "**/CVS": true,
+    "**/.DS_Store": true,
+    //隐藏java 相关配置...
+    "**/target": true,
+    "**/.classpath": true,
+    "**/.project": true,
+    "**/.idea": true,
+    "**/.settings": true,
+    "**/.mvn": true,
+    "*.class": true
+  },
+  "cSpell.words": [
+    "CJADMIN",
+    "combinator",
+    "contextmenu",
+    "daterange",
+    "imageslim",
+    "noopener",
+    "noredirect",
+    "todoapp",
+    "todos",
+    "vian"
+  ],
+  "eslint.codeAction.showDocumentation": {
+    "enable": true
+  }
+}
