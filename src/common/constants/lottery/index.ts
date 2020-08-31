@@ -1,7 +1,7 @@
 // lottery
-export const DAYLY_LOTTERY_ID = 1;
-export const HOLIDAY_LOTTERY_ID = 2;
-export const POINT_LOTTERT_ID = 3;
+export const DAYLY_LOTTERY_ID: number = 1;
+export const HOLIDAY_LOTTERY_ID: number = 2;
+export const POINT_LOTTERT_ID: number = 3;
 
 export const lotteryTypeMap = {
     [DAYLY_LOTTERY_ID]: {

@@ -9,14 +9,15 @@
   "eslint.enable": true,
   "eslint.run": "onSave",
   "eslint.options": {
-    "extensions": [".js", ".vue"]
+    "extensions": [".js", ".vue", ".ts"]
   },
   "eslint.validate": [
     "javascript",
     "javascriptreact",
     "vue-html",
     "vue",
-    "html"
+    "html",
+    "typescript"
   ],
   // 关闭 vscode 默认的检查工具
   "html.validate.scripts": false,

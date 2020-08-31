@@ -28,7 +28,7 @@ export const playLottery = (id: string|number) => {
     })
 }
 
-export const savePrizeAddress = (data: any) => {
+export const savePrizeAddress = (data: prizeAddressType) => {
     return axios({
         method: 'post',
         url: '/lottery/address',

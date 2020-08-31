@@ -18,6 +18,17 @@ interface goodsListDataItem {
   relatedModelImg: null|string
 }
 
+interface goodsType {
+  id: string;
+    name: string;
+    price: string;
+    status: number;
+    activityType: number;
+    description: string;
+    brandName: string;
+    mainPicUrl: string;
+    tags: goodsListTag[];
+}
 // interest type
 interface ponitRecordListItem {
   id: string;
@@ -37,6 +48,23 @@ interface pointGiftListItem {
   count: number;
 }
 
+interface pointRecordType {
+  id: string;
+  description: string;
+  type: number;
+  spendPointValue: number;
+  date: dayjs.Dayjs;
+}
+
+interface pointGiftType {
+  id: string;
+  name: string;
+  type: number;
+  needPointValue: number;
+  mainPicUrl: string;
+  remainCount: number;
+}
+
 // lottery type
 interface lotteryDetailType {
   id: string;
@@ -53,6 +81,28 @@ interface lotteryPrizeListItem {
   pic: string;
 }
 
+interface LotteryType {
+  id: string;
+  name: string;
+  type: number;
+  startDate: dayjs.Dayjs;
+  endDate: dayjs.Dayjs;
+}
+
+interface prizeType {
+  id: string;
+  name: string;
+  type: number;
+  mainPicUrl: string;
+}
+
+interface prizeAddressType {
+  recordId: string,
+  name: string,
+  phoneNumber: string,
+  address: string
+}
+
 // user type
 interface userInfoType {
   userId: string;
@@ -63,4 +113,15 @@ interface userInfoType {
   vip: boolean;
   vipValidityDate: number;
   avatar: string;
+}
+
+interface userTranslatorType {
+  id: string;
+  email: string;
+  name: string;
+  phoneNumber: string;
+  type: number;
+  isVip: boolean;
+  vipValidityDate: any;
+  avatarUrl: string;
 }
