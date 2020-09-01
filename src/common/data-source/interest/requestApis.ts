@@ -3,7 +3,9 @@ import axios from '@/common/util/http';
 import { pointRecordTranslator, pointGiftTranslator } from './translators'
 
 export const getUserPointCount = () => {
-    return axios('/interest/point')
+    return axios('/interest/point').then((res) => {
+        return Number(res)
+    })
 }
 
 export const getUserPointRecordList = () => {

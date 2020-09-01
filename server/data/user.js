@@ -10,7 +10,7 @@ const userInfo = {
         tel: '15999999999',
         userType: 2,
         vip: true,
-        vipValidityDate: dayjs('2020-08-27').valueOf(),
+        vipValidityDate: dayjs('2021-08-27').valueOf(),
         avatar: 'https://qhyxpicoss.kujiale.com/avatars/58.jpg'
     }
 }
