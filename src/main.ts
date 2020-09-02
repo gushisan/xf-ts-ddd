@@ -5,13 +5,15 @@ import {
   Button,
   Row,
   Col,
-  Icon
+  Icon,
+  Tag
 } from 'ant-design-vue';
 
 Vue.use(Button);
 Vue.use(Row);
 Vue.use(Col);
 Vue.use(Icon);
+Vue.use(Tag);
 
 
 Vue.config.productionTip = false;

@@ -36,6 +36,7 @@
   width: 100%;
   height: 75px;
   border-top: 1px solid rgba(0, 0, 0, 0.1);
+  background-color: #FFF;
 }
 .app-bar i {
   display: block;

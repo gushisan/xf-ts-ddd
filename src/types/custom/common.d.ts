@@ -85,8 +85,8 @@ interface LotteryType {
   id: string;
   name: string;
   type: number;
-  startDate: dayjs.Dayjs;
-  endDate: dayjs.Dayjs;
+  startDate: dayjs.Dayjs|null;
+  endDate: dayjs.Dayjs|null;
 }
 
 interface prizeType {

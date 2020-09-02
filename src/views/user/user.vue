@@ -22,22 +22,13 @@
 <script lang="ts">
 import { Component, Vue } from "vue-property-decorator";
 import { UserService, InterestService } from "./services";
-import user from "@/common/domains/user-domain/entities/user";
+import User from "@/common/domains/user-domain/entities/user";
 import { SIGN_USER_TYPE } from "@/common/constants/user/index";
-const userData: userTranslatorType = {
-  id: "",
-  email: "",
-  name: "",
-  phoneNumber: "",
-  type: 0,
-  isVip: false,
-  vipValidityDate: null,
-  avatarUrl: ""
-};
+
 @Component
-export default class User extends Vue {
+export default class UserPage extends Vue {
   private pointCount: number | null = null;
-  private user: user = new user(userData);
+  private user: User = new User(null);
   private signUserType: number = SIGN_USER_TYPE;
 
   mounted() {

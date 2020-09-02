@@ -4,8 +4,15 @@
 import dayjs from 'dayjs'
 import { lotteryTypeMap } from '@/common/constants/lottery/index'
 class Lottery {
-  private lotteryData: LotteryType
-    constructor(data: LotteryType) {
+  private lotteryData: LotteryType = {
+    id: '',
+    name: '',
+    type: 0,
+    startDate: null,
+    endDate: null
+  }
+    constructor(data: LotteryType|null) {
+      if (data)
       this.lotteryData = data
     }
     // 获取活动时间范围

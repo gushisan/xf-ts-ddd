@@ -5,9 +5,19 @@ import { NEED_REMIND_VIP_LACK_DAYS, USER_TYPE_MAP } from '@/common/constants/use
 import dayjs from 'dayjs'
 
 class User {
-  private userInfo: userTranslatorType
+  private userInfo: userTranslatorType = {
+    id: "",
+    email: "",
+    name: "",
+    phoneNumber: "",
+    type: 0,
+    isVip: false,
+    vipValidityDate: null,
+    avatarUrl: ""
+  }
 
-  constructor(user: userTranslatorType) {
+  constructor(user: userTranslatorType|null) {
+    if (user)
     this.userInfo = {
       ...user,
       vipValidityDate: dayjs(user.vipValidityDate)

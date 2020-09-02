@@ -4,15 +4,20 @@
 import { SUPER_PRIZE_TYPE } from '@/common/constants/lottery/index';
 
 class Prize {
-  private prizeData: prizeType
-    constructor(data: prizeType) {
-      this.prizeData = data
-    }
+  private prizeData: prizeType = {
+    id: '',
+    name: '',
+    type: 0,
+    mainPicUrl: '',
+  }
+  constructor(data: prizeType|null) {
+    if (data)
+    this.prizeData = data
+  }
 
-    isSuperPrize() {
-        return this.prizeData.type === SUPER_PRIZE_TYPE;
-    }
-
+  isSuperPrize() {
+      return this.prizeData.type === SUPER_PRIZE_TYPE;
+  }
 }
 
 
