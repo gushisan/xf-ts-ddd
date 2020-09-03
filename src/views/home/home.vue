@@ -12,15 +12,14 @@
             <img :src="goods.goodsData.mainPicUrl" />
             <span>{{ goods.goodsData.name }}</span>
           </div>
-          <a-tag v-if="goods.isOutStock()" color="#f50" class="out-stock">已无货</a-tag>
+          <a-tag v-if="goods.isOutStock()" color="#f50">已无货</a-tag>
         </div>
         <div class="detail-info">
           <span
             v-if="goods.isDiscountGoods()"
-            class="price discount"
           >特价：{{ goods.goodsData.price }} 元</span>
-          <span v-else class="price">价格：{{ goods.goodsData.price }} 元</span>
-          <div class="tag-wrap">
+          <span v-else>价格：{{ goods.goodsData.price }} 元</span>
+          <div>
             <a-tag v-for="(v, idx) in goods.getShowInListTags()" :key="idx" color="pink" class="tag">{{ v.title }}</a-tag>
           </div>
         </div>
@@ -51,7 +50,7 @@ export default class Home extends Vue {
 </script>
 <style lang="less" scoped>
 .user {
-  padding-bottom: 150px;
+  padding-bottom: 80px;
   img {
     width: 30px;
     height: 30px;
@@ -64,7 +63,7 @@ export default class Home extends Vue {
   .goods-item {
     width: 100%;
     height: 80px;
-    border-bottom: 1px solid rgba(0, 0, 0, 1);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
     .main-info {
       display: flex;
       align-items: center;

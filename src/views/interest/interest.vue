@@ -6,15 +6,15 @@
     <h3>积分记录</h3>
     <div v-for="(record, index) in pointRecordList" :key="index" class="point-record">
       <span>{{ record.getDaysFromNow() }} 天前：</span>
-      <span>{{ record.description }}</span>
+      <span>{{ record.pointRecordData.description }}</span>
       <span> {{ record.isSpendPoint() ? '消耗' : '获得' }}</span>
-      <span>{{ record.spendPointValue }}积分</span>
+      <span>{{ record.pointRecordData.spendPointValue }}积分</span>
     </div>
     <h3>积分兑换</h3>
     <div v-for="(gift, index) in interestGiftList" :key="index*10+10" class="point-exchange">
       <div class="img-wrap">
         <img :src="gift.pointGiftData.mainPicUrl" />
-        <span v-if="gift.isNeedVip()" class="vip-exchange">会员可兑换</span>
+        <a-tag v-if="gift.isNeedVip()" color="pink" class="vip-exchange">会员可兑换</a-tag>
       </div>
       <div class="gift-detail">
         <div>{{ gift.pointGiftData.name }}</div>
@@ -68,3 +68,14 @@ export default class Interest extends Vue {
   
 }
 </script>
+
+<style lang="less" scoped>
+.img-wrap {
+  img {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+    border-radius: 20px;
+  }
+}
+</style>

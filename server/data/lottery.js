@@ -4,7 +4,7 @@ const lotteryDetail = {
     msg: '',
     data: {
         id: '8274',
-        name: 'lottery name',
+        name: '开心转转转',
         lotteryType: 3,
         startDate: dayjs('2020-05-05').valueOf(),
         endDate: dayjs('2020-09-05').valueOf(),

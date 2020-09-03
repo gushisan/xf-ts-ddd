@@ -1,17 +1,14 @@
 <template>
-  <div class="home">
+  <div class="user-page">
     <h1>个人中心</h1>
-    <div class="user">
-      <div class="info">
-        <div>尊敬的{{ user.getUserTypeTitle() }}：{{ user.userInfo.name }}</div>
-        <div>绑定手机号： {{ user.userInfo.phoneNumber }}</div>
-        <div>绑定email： {{ user.userInfo.email }}</div>
-      </div>
-      <div class="avatar">
-        <img :class="user.userInfo.isVip ? 'vip' : ''" :src="user.userInfo.avatarUrl" />
-        <div v-if="user.userInfo.isVip">会员还有{{ user.getVipRemainDays() }}天</div>
-      </div>
-    </div>
+    <img :class="user.userInfo.isVip ? 'vip' : ''" :src="user.userInfo.avatarUrl" />
+    <div>尊敬的{{ user.getUserTypeTitle() }}：{{ user.userInfo.name }}</div>
+    <div>手机号： {{ user.userInfo.phoneNumber }}</div>
+    <div>电子邮箱： {{ user.userInfo.email }}</div>
+   
+    <div v-if="user.userInfo.isVip">会员还有{{ user.getVipRemainDays() }}天</div>
+  
+ 
 
     <div class="lottery-tips">
       <div>剩余积分：{{ pointCount }} 分</div>
@@ -50,5 +47,13 @@ export default class UserPage extends Vue {
   }
 }
 </script>
-<style scoped>
+<style lang="less" scoped>
+.user-page {
+  img {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+    border-radius: 20px;
+  }
+}
 </style>

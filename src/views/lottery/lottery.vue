@@ -1,11 +1,11 @@
 <template>
-  <div class="home">
+  <div class="lottery-page">
     <h1>抽奖活动</h1>
     <div class="lottery-detail">
       <h3>抽奖详情</h3>
-      <div class="name">name: {{ lottery.lotteryData.name }}</div>
+      <div class="name">活动名称: {{ lottery.lotteryData.name }}</div>
       <div>抽奖类型：{{ lottery.getLotteryType() }}</div>
-      <div>time: {{ lottery.getLotteryTimeScope() }}</div>
+      <div>时间: {{ lottery.getLotteryTimeScope() }}</div>
     </div>
     <div class="lottery-prize">
       <h3>奖品列表</h3>
@@ -20,7 +20,7 @@
           </div>
         </div>
       </div>
-      <button @Click="handlePlayLottery">点击抽奖</button>
+      <a-button type="danger" @click="handlePlayLottery">点击抽奖</a-button>
           
       <div v-if="isShowSaveAddressModal" class="save-address-modal">
         <div>收货地址填写</div>
@@ -34,6 +34,14 @@
       <span>尊敬的{{ user.getUserTypeTitle() }}{{ user.userInfo.name }}</span>
       <div>您还剩余: {{ pointCount }} 分</div>
     </div>
+    <a-modal
+      title="中奖了"
+      :visible="visible"
+      @ok="handleOk"
+      @cancel="visible = false"
+    >
+      <p>恭喜抽中超级大奖！！！</p>
+    </a-modal>
   </div>
 </template>
 
@@ -57,6 +65,7 @@ export default class LotteryPage extends Vue {
   private gainPrize: Prize = new Prize(null) // 抽奖获得的的奖品
   private isShowSaveAddressModal: boolean = false // 是否展示地址编写modal
   private addressInfo: any = {} // 用户input地址信息
+  private visible: boolean = false
 
   mounted() {
     this.initLottery();
@@ -84,7 +93,13 @@ export default class LotteryPage extends Vue {
   }
 
   handlePlayLottery() {
+    console.log('123')
+    this.visible = true
+  }
 
+  handleOk() {
+    this.isShowSaveAddressModal = true
+    this.visible = false
   }
 
   handleSubmit() {
@@ -92,3 +107,13 @@ export default class LotteryPage extends Vue {
   }
 }
 </script>
+<style lang="less" scoped>
+.lottery-page {
+  img {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+    border-radius: 20px;
+  }
+}
+</style>
