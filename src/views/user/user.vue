@@ -5,10 +5,8 @@
     <div>尊敬的{{ user.getUserTypeTitle() }}：{{ user.userInfo.name }}</div>
     <div>手机号： {{ user.userInfo.phoneNumber }}</div>
     <div>电子邮箱： {{ user.userInfo.email }}</div>
-   
+
     <div v-if="user.userInfo.isVip">会员还有{{ user.getVipRemainDays() }}天</div>
-  
- 
 
     <div class="lottery-tips">
       <div>剩余积分：{{ pointCount }} 分</div>
@@ -17,33 +15,31 @@
 </template>
 
 <script lang="ts">
-import { Component, Vue } from "vue-property-decorator";
-import { UserService, InterestService } from "./services";
-import User from "@/common/domains/user-domain/entities/user";
-import { SIGN_USER_TYPE } from "@/common/constants/user/index";
+import { Component, Vue } from 'vue-property-decorator'
+import { UserService, InterestService } from './services'
+import User from '@/common/domains/user-domain/entities/user'
 
 @Component
 export default class UserPage extends Vue {
-  private pointCount: number | null = null;
-  private user: User = new User(null);
-  private signUserType: number = SIGN_USER_TYPE;
+  private pointCount: number | null = null
+  private user: User = new User()
 
   mounted() {
-    this.getUserInfo();
-    this.getUserPonitCount();
+    this.getUserInfo()
+    this.getUserPonitCount()
   }
 
   // 获取用户信息
   async getUserInfo() {
-    const user = await UserService.getUserDetail();
-    this.user = user;
-    console.log(user.getVipRemainDays());
+    const user = await UserService.getUserDetail()
+    this.user = user
+    console.log(user.getVipRemainDays())
   }
 
   async getUserPonitCount() {
-    const pointCount = await InterestService.getUserPointCount();
-    this.pointCount = pointCount;
-    console.log(pointCount);
+    const pointCount = await InterestService.getUserPointCount()
+    this.pointCount = pointCount
+    console.log(pointCount)
   }
 }
 </script>

@@ -1,4 +1,4 @@
-export const goodsTranslator = (data: goodsListDataItem) => {
+export const goodsTranslator = (data: goodsListDataItem): goodsType => {
   return {
       id: data.id,
       name: data.goodsName,

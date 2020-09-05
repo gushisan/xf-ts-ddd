@@ -11,7 +11,7 @@ const userInfo = {
         userType: 2,
         vip: true,
         vipValidityDate: dayjs('2021-08-27').valueOf(),
-        avatar: 'https://qhyxpicoss.kujiale.com/avatars/58.jpg'
+        avatar: 'https://user-gold-cdn.xitu.io/2020/6/8/17292c7cb0927ff6?imageView2/1/w/180/h/180/q/85/format/webp/interlace/1'
     }
 }
 

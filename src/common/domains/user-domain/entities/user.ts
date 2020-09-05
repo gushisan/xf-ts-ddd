@@ -16,7 +16,10 @@ class User {
     avatarUrl: ""
   }
 
-  constructor(user: userTranslatorType|null) {
+  constructor(user: userTranslatorType)
+  constructor()
+
+  constructor(user?: userTranslatorType) {
     if (user)
     this.userInfo = {
       ...user,

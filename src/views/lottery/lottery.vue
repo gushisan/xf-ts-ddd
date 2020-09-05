@@ -57,12 +57,12 @@ const LotteryId = '8274';
 
 @Component
 export default class LotteryPage extends Vue {
-  private user: User = new User(null) // 个人信息
+  private user: User = new User() // 个人信息
   private pointCount: number = 0 // 剩余积分
-  private lottery: Lottery = new Lottery(null) // 抽奖活动详情
-  private prizeList: any[] = [] // 奖品列表
+  private lottery: Lottery = new Lottery() // 抽奖活动详情
+  private prizeList: Prize[] = [] // 奖品列表
   private recordId: string = '' // 中奖记录的id
-  private gainPrize: Prize = new Prize(null) // 抽奖获得的的奖品
+  private gainPrize: Prize = new Prize() // 抽奖获得的的奖品
   private isShowSaveAddressModal: boolean = false // 是否展示地址编写modal
   private addressInfo: any = {} // 用户input地址信息
   private visible: boolean = false

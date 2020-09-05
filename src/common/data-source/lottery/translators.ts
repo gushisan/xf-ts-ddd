@@ -1,7 +1,7 @@
 import dayjs from 'dayjs';
 
 
-export const LotteryTranslator = (data: lotteryDetailType) => {
+export const LotteryTranslator = (data: lotteryDetailType): LotteryType => {
     return {
         id: data.id,
         name: data.name,
@@ -11,7 +11,7 @@ export const LotteryTranslator = (data: lotteryDetailType) => {
     }
 }
 
-export const prizeTranslator = (data: lotteryPrizeListItem) => {
+export const prizeTranslator = (data: lotteryPrizeListItem): prizeType => {
     return {
         id: data.id,
         name: data.prizeName,

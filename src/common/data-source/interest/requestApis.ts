@@ -9,13 +9,13 @@ export const getUserPointCount = () => {
 }
 
 export const getUserPointRecordList = () => {
-    return axios('/interest/pointRecord').then((data: any) => {
+    return axios('/interest/pointRecord').then((data: any): pointRecordType[] => {
         return data.map((item: ponitRecordListItem) => pointRecordTranslator(item));
     })
 }
 
 export const getInterestGiftList = () => {
-    return axios('/interest/gift').then((data: any) => {
+    return axios('/interest/gift').then((data: any): pointGiftType[] => {
         return data.map((item: pointGiftListItem) => pointGiftTranslator(item))
     })
 }

@@ -11,19 +11,22 @@ class Lottery {
     startDate: null,
     endDate: null
   }
-    constructor(data: LotteryType|null) {
-      if (data)
-      this.lotteryData = data
-    }
-    // 获取活动时间范围
-    getLotteryTimeScope() {
-        return `${dayjs(this.lotteryData.startDate).format("M月D日")} - ${dayjs(this.lotteryData.endDate).format("M月D日")}`
-    }
 
-    // 获取活动类型描述
-    getLotteryType() {
-        return this.lotteryData.type && lotteryTypeMap[this.lotteryData.type].title
-    }
+  constructor()
+  constructor(data: LotteryType)
+  constructor(data?: LotteryType) {
+    if (data)
+    this.lotteryData = data
+  }
+  // 获取活动时间范围
+  getLotteryTimeScope() {
+      return `${dayjs(this.lotteryData.startDate).format("M月D日")} - ${dayjs(this.lotteryData.endDate).format("M月D日")}`
+  }
+
+  // 获取活动类型描述
+  getLotteryType() {
+      return this.lotteryData.type && lotteryTypeMap[this.lotteryData.type].title
+  }
 }
 
 export default Lottery

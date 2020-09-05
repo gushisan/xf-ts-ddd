@@ -9,16 +9,9 @@
   "eslint.enable": true,
   "eslint.run": "onSave",
   "eslint.options": {
-    "extensions": [".js", ".vue", ".ts"]
+    "extensions": [".js", ".vue"]
   },
-  "eslint.validate": [
-    "javascript",
-    "javascriptreact",
-    "vue-html",
-    "vue",
-    "html",
-    "typescript"
-  ],
+  "eslint.validate": ["javascript", "javascriptreact", "vue-html", "vue", "html"],
   // 关闭 vscode 默认的检查工具
   "html.validate.scripts": false,
   "javascript.validate.enable": false,
@@ -39,7 +32,7 @@
     // ".eslintignore": true,
     // ".eslintrc.js": true,
     // ".gitignore": true,
-    ".prettierrc": true,
+    // ".prettierrc": true,
     ".stylelintignore": true,
     "package-lock.json": true,
     "postcss.config.js": true,
@@ -61,19 +54,8 @@
     "**/.mvn": true,
     "*.class": true
   },
-  "cSpell.words": [
-    "CJADMIN",
-    "combinator",
-    "contextmenu",
-    "daterange",
-    "imageslim",
-    "noopener",
-    "noredirect",
-    "todoapp",
-    "todos",
-    "vian"
-  ],
-  "eslint.codeAction.showDocumentation": {
-    "enable": true
-  }
+  "cSpell.words": ["CJADMIN", "combinator", "contextmenu", "daterange", "imageslim", "noopener", "noredirect", "todoapp", "todos", "vian"]
+  // "eslint.codeAction.showDocumentation": {
+  //   "enable": true
+  // }
 }

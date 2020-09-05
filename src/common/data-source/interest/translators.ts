@@ -1,6 +1,6 @@
 import dayjs from 'dayjs';
 
-export const pointRecordTranslator = (data: ponitRecordListItem) => {
+export const pointRecordTranslator = (data: ponitRecordListItem): pointRecordType => {
     return {
         id: data.id,
         description: data.title,
@@ -10,7 +10,7 @@ export const pointRecordTranslator = (data: ponitRecordListItem) => {
     }
 }
 
-export const pointGiftTranslator = (data: pointGiftListItem) => {
+export const pointGiftTranslator = (data: pointGiftListItem): pointGiftType => {
     return {
         id: data.id,
         name: data.name,

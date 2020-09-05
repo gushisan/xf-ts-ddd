@@ -7,7 +7,7 @@ export const getLotteryDetail = (id: string|number) => {
 }
 
 export const getPrizeList = (id: string|number) => {
-    return axios(`/lottery/prizeList?id=${id}`).then((data: any) => {
+    return axios(`/lottery/prizeList?id=${id}`).then((data: any): prizeType[] => {
         return data.map((item: lotteryPrizeListItem) => prizeTranslator(item))
     })
 }

@@ -32,11 +32,13 @@
 import { Component, Vue } from "vue-property-decorator";
 import { UserService, GoodsService } from "./services";
 import User from "@/common/domains/user-domain/entities/user";
+// eslint-disable-next-line no-unused-vars
+import Goods from '@/common/domains/goods-domain/entities/goods';
 
 @Component
 export default class Home extends Vue {
-  private user: User = new User(null);
-  private goodsList: any[] = [];
+  private user: User = new User();
+  private goodsList: Goods[] = [];
 
   mounted() {
     this.init();

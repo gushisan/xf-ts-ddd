@@ -31,13 +31,17 @@
 import { Component, Vue } from "vue-property-decorator";
 import { UserService, InterestService } from './services'
 import User from "@/common/domains/user-domain/entities/user";
+// eslint-disable-next-line no-unused-vars
+import PointRecord from '@/common/domains/interest-domain/entities/pointRecord';
+// eslint-disable-next-line no-unused-vars
+import PointGift from '@/common/domains/interest-domain/entities/pointGift';
 
 @Component
 export default class Interest extends Vue {
   private remainPoint: number =  0 // 剩余积分
-  private pointRecordList: any[] = [] // 积分记录列表
-  private interestGiftList: any[] = [] // 积分礼品列表
-  private user: User = new User(null) // 个人信息
+  private pointRecordList: PointRecord[] = [] // 积分记录列表
+  private interestGiftList: PointGift[] = [] // 积分礼品列表
+  private user: User = new User() // 个人信息
 
   mounted() {
     this.getUserPointCount();

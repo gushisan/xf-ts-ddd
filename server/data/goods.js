@@ -11,7 +11,7 @@ const goodsListData = {
             desc: '这是一个商品简介',
             brand: '商品品牌',
             relatedModelId: "123423243",
-            mainPic: 'https://img12.360buyimg.com/n7/jfs/t1/4187/18/3505/79920/5b99c0aaE54c580aa/a91e626137d75324.jpg',
+            mainPic: 'https://img14.360buyimg.com/n7/jfs/t1/149820/27/2315/51132/5f03c891Ea425f3fd/f569574cd2ab2a5b.jpg',
             tag: [
                 {
                     type: 2,
@@ -41,7 +41,7 @@ const goodsListData = {
             desc: '这是一个商品简介',
             brand: '商品品牌',
             relatedModelId: "123423243",
-            mainPic: 'https://img12.360buyimg.com/n7/jfs/t1/4187/18/3505/79920/5b99c0aaE54c580aa/a91e626137d75324.jpg',
+            mainPic: 'https://img14.360buyimg.com/n7/jfs/t1/149820/27/2315/51132/5f03c891Ea425f3fd/f569574cd2ab2a5b.jpg',
             tag: [
                 {
                     type: 2,
@@ -71,7 +71,7 @@ const goodsListData = {
             desc: '这是一个商品简介',
             brand: '商品品牌',
             relatedModelId: "123423243",
-            mainPic: 'https://img12.360buyimg.com/n7/jfs/t1/4187/18/3505/79920/5b99c0aaE54c580aa/a91e626137d75324.jpg',
+            mainPic: 'https://img14.360buyimg.com/n7/jfs/t1/149820/27/2315/51132/5f03c891Ea425f3fd/f569574cd2ab2a5b.jpg',
             tag: [
                 {
                     type: 2,
@@ -101,7 +101,7 @@ const goodsListData = {
             desc: '这是一个商品简介',
             brand: '商品品牌',
             relatedModelId: "123423243",
-            mainPic: 'https://img12.360buyimg.com/n7/jfs/t1/4187/18/3505/79920/5b99c0aaE54c580aa/a91e626137d75324.jpg',
+            mainPic: 'https://img14.360buyimg.com/n7/jfs/t1/149820/27/2315/51132/5f03c891Ea425f3fd/f569574cd2ab2a5b.jpg',
             tag: [
                 {
                     type: 2,
@@ -131,7 +131,7 @@ const goodsListData = {
             desc: '这是一个商品简介',
             brand: '商品品牌',
             relatedModelId: "123423243",
-            mainPic: 'https://img12.360buyimg.com/n7/jfs/t1/4187/18/3505/79920/5b99c0aaE54c580aa/a91e626137d75324.jpg',
+            mainPic: 'https://img14.360buyimg.com/n7/jfs/t1/149820/27/2315/51132/5f03c891Ea425f3fd/f569574cd2ab2a5b.jpg',
             tag: [
                 {
                     type: 2,
@@ -161,7 +161,7 @@ const goodsListData = {
             desc: '这是一个商品简介',
             brand: '商品品牌',
             relatedModelId: "123423243",
-            mainPic: 'https://img12.360buyimg.com/n7/jfs/t1/4187/18/3505/79920/5b99c0aaE54c580aa/a91e626137d75324.jpg',
+            mainPic: 'https://img14.360buyimg.com/n7/jfs/t1/149820/27/2315/51132/5f03c891Ea425f3fd/f569574cd2ab2a5b.jpg',
             tag: [
                 {
                     type: 2,
@@ -191,7 +191,7 @@ const goodsListData = {
             desc: '这是一个商品简介',
             brand: '商品品牌',
             relatedModelId: "123423243",
-            mainPic: 'https://img12.360buyimg.com/n7/jfs/t1/4187/18/3505/79920/5b99c0aaE54c580aa/a91e626137d75324.jpg',
+            mainPic: 'https://img14.360buyimg.com/n7/jfs/t1/149820/27/2315/51132/5f03c891Ea425f3fd/f569574cd2ab2a5b.jpg',
             tag: [
                 {
                     type: 2,

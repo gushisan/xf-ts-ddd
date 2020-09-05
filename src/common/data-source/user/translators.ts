@@ -1,4 +1,4 @@
-export const userTranslator = (data: userInfoType) => {
+export const userTranslator = (data: userInfoType): userTranslatorType => {
   return {
       id: data.userId,
       email: data.email,

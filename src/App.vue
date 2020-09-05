@@ -7,10 +7,10 @@
 
 <script lang="ts">
 import { Component, Vue } from "vue-property-decorator";
-import appBar from '@/components/app-bar.vue'
+import appBar from "@/components/app-bar.vue";
 
 @Component({
-  components:{
+  components: {
     appBar
   }
 })

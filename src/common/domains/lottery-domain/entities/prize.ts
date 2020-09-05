@@ -10,7 +10,11 @@ class Prize {
     type: 0,
     mainPicUrl: '',
   }
-  constructor(data: prizeType|null) {
+
+  constructor(data: prizeType)
+  constructor()
+
+  constructor(data?: prizeType) {
     if (data)
     this.prizeData = data
   }
