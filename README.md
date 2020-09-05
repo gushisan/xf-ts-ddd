@@ -53,3 +53,6 @@ yarn serve
 ## 项目结构
 
 ![](https://user-gold-cdn.xitu.io/2019/7/25/16c273ce23559170?imageView2/0/w/1280/h/960/format/webp/ignore-error/1)
+
+> 原文地址[领域驱动设计在前端中的应用
+> ](https://juejin.im/post/6844903896888918023)
